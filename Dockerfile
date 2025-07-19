@@ -2,6 +2,8 @@ FROM python:3.13.0-slim
 
 WORKDIR /app
 
-COPY main.py .
+COPY . .
 
-CMD ["python", "main.py"]
+RUN pip install -r requirements.txt
+
+CMD ["python", "read_fhir.py"]
