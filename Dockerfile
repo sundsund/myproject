@@ -8,4 +8,4 @@ RUN pip install -r requirements.txt
 
 RUN python -m unittest tests/test_read_questionnaire.py
 
-CMD ["python", "read_questionnaire.py"]
+CMD ["sh", "-c", "python auth_server.py & python client_app.py"]
