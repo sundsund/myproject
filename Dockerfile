@@ -6,4 +6,4 @@ COPY . .
 
 RUN pip install -r requirements.txt
 
-CMD ["python", "read_fhir.py"]
+CMD ["python", "read_questionnaire.py"]
